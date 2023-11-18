@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>home page</title>
+  <style>
+    #a {
+      width: 320px;
+      padding: 10px;
+      border: 5px solid gray;
+      margin-top: 100px;
+      margin-left: 380px;
+    }
+    #m{
+      margin-left: 130px;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: right;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+    
+    .active {
+      background-color: #04AA6D;
+    }
+
+    </style>
+</head>
+<body>
+
+    <form action="add" id="a">
+        <label for="fname"> vazn :</label>
+        <input type="text" id="fname" name="vazn"><br><br>
+        <label for="lname">ghad:</label>
+        <input type="text" id="lname" name="ghad"><br><br>
+        <input type="submit" id="m">
+            </form><br>
+       
+
+            {% block content %}
+            <input type="text" id="a" name="lname" value="{{res}}">
+            
+           
+               {% endblock %} 
+         
+              
+</body>
+</html>
+
